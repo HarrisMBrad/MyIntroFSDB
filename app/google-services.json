@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "755639527752",
+    "firebase_url": "https://myintrofsdb.firebaseio.com",
+    "project_id": "myintrofsdb",
+    "storage_bucket": "myintrofsdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755639527752:android:735af77cb5d578d3d5ab7d",
+        "android_client_info": {
+          "package_name": "com.afirebasertnew.myintrofsdb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755639527752-58m8p8kd34pu9bnb14lsf53na9caja7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaohD1jiiN7Hpn9R7N3waVH5Xp3KjLcxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755639527752-58m8p8kd34pu9bnb14lsf53na9caja7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_title"
+        android:inputType="text"
+        android:text="@string/enter_title"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/edit_text_thoughts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_thoughts"
+        android:inputType="text"
+        android:text="@string/enter_thoughts"
+        android:autofillHints="What's On Your Mind?" />
+    <Button
+        android:id="@+id/save_button"
+        android:text="@string/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

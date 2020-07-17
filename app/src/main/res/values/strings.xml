@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyIntroFSDB</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_thoughts">Enter Thoughts</string>
+    <string name="save">Save</string>
+</resources>
