@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private EditText enterTitle;
     private EditText enterThought;
-    private Button saveButton, showButton;
     private TextView recTitle, recThought;
 
 
@@ -34,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String KEY_THOUGHT = "thought";
 
     // Connection to FireStore...
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private DocumentReference journalRef = db.collection("Journal")
+    private final FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private final DocumentReference journalRef = db.collection("Journal")
             .document("First Thoughts");
 
     @Override
@@ -43,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        saveButton = findViewById(R.id.save_button);
+        Button saveButton = findViewById(R.id.save_button);
         enterTitle = findViewById(R.id.edit_text_title);
         enterThought = findViewById(R.id.edit_text_thoughts);
         recThought = findViewById(R.id.rec_thought);
         recTitle = findViewById(R.id.rec_title);
-        showButton = findViewById(R.id.show_dataID);
+        Button showButton = findViewById(R.id.show_dataID);
 
         showButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Log.d(TAG, "onFailure: " + e.toString());
+                                Log.d(TAG, "onFailure: " + e);
                             }
                         });
 
